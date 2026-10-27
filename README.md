@@ -53,4 +53,10 @@ O símbolo original é preservado, sem recoloração. A identidade do website co
 | Areia rosada | `#FAEADE` | Área de admissões |
 | Castanho escuro | `#342B28` | Texto principal |
 
-O branco é usado junto ao logótipo para preservar o fundo do ficheiro original. Títulos em Georgia e texto em Arial dispensam fontes externas. As proporções do símbolo são preservadas com `object-fit: contain`.
+O branco é usado junto ao logótipo para preservar o fundo do ficheiro original. A tipografia usa Manrope (400–800), carregada através de Google Fonts, com Arial como alternativa. As proporções do símbolo são preservadas com `object-fit: contain`.
+
+## Composição e tipografia
+
+Revisão inspirada na organização de conteúdos educativos do UX Design Institute: hierarquia sem serifa, títulos de maior presença, fotografias rectangulares, separadores discretos e oferta de ensino apresentada em linhas. A referência não implica afiliação institucional.
+
+Os tamanhos e a composição ajustam-se a computador, tablet e telemóvel. O símbolo original e a paleta suave são preservados. A fonte externa depende da disponibilidade de Google Fonts; Arial serve de alternativa.
