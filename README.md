@@ -4,67 +4,51 @@ Proposta independente de voluntariado digital desenvolvida por Felisberto Ruco, 
 
 ## Executar
 
-Abra `index.html` num navegador. Para servir localmente:
+Abra `index.html` num navegador ou execute:
 
 ```sh
 python3 -m http.server 8080
 ```
 
-Aceda a http://localhost:8080. Não exige instalação de dependências nem compilação.
+Aceda a http://localhost:8080. Não exige dependências nem compilação.
 
-## Publicar num servidor
+## Alojamento
 
-Copie `index.html` e a pasta `assets/` para a pasta pública do alojamento, como `public_html` ou `www`. O projecto usa HTML, CSS e JavaScript e pode ser servido por Apache, Nginx ou outro servidor de ficheiros estáticos.
+Copie `index.html` e a pasta `assets/` para a pasta pública do servidor. Apache, Nginx e alojamentos de ficheiros estáticos são compatíveis.
 
 ## Funcionalidades
 
-- Apresentação institucional e dos três níveis de ensino.
-- Detalhes das etapas de ensino em janelas de diálogo.
-- Localização das unidades Tivane e Magumbwé.
-- Menu adaptável a telemóveis.
-- Preparação de pedidos de informações por `mailto:`. O visitante confirma o envio no seu programa de correio electrónico.
+- Apresentação da escola, etapas de ensino e unidades.
+- Detalhes das etapas em janelas de diálogo com nomes acessíveis.
+- Menu móvel com acesso às admissões, fecho por Escape e clique no exterior.
+- Ligação directa para telefonar à secretaria.
+- E-mail preparado a partir das opções seleccionadas; o envio é confirmado pelo visitante no seu programa de correio electrónico.
+- Entradas animadas uma única vez por elemento; transições nos botões e progresso de leitura.
+- Conteúdos visíveis sem JavaScript e suporte à preferência de movimento reduzido.
 
-## Limites do protótipo
+## Identidade visual
 
-Não inclui sistema de gestão académica, autenticação, pagamentos, base de dados nem submissão de matrículas. As fotografias são carregadas do site institucional e dependem da sua disponibilidade. O logótipo fornecido está incluído localmente em `assets/logotipo-nilia.jpg`. A utilização definitiva dos conteúdos e da identidade institucional deve ser acordada com a instituição. Antes da publicação institucional, validar os contactos, requisitos, propinas e conteúdos.
+Logótipo original fornecido, sem recoloração; títulos Manrope em peso 800 e paleta de laranja, terracota, marfim e pêssego. A fonte é carregada através de Google Fonts, com Arial como alternativa.
+
+A revisão de usabilidade coloca o título e o contacto antes da fotografia no telemóvel, aumenta os textos de leitura e elimina elementos decorativos em movimento contínuo. As fotografias estão guardadas em `assets/`, optimizadas em WebP, com dimensões declaradas no HTML.
+
+## Verificação
+
+Verificadas as vistas de 378 e 320 píxeis, sem deslocamento horizontal, o menu móvel, os detalhes das etapas e a ligação de e-mail com a etapa seleccionada. A sintaxe JavaScript foi validada com `node --check`.
+
+## Limites
+
+Não inclui gestão académica, autenticação, pagamentos, base de dados nem submissão de matrículas. Horários, distribuição das classes pelas unidades e condições de ingresso devem ser confirmados com a instituição. As fotografias e a identidade institucional requerem validação da escola antes de utilização definitiva.
 
 ## Estrutura
 
 - `index.html`: página, estilos e interacções.
-- `assets/logotipo-nilia.jpg`: logótipo original fornecido.
-- `README.md`: documentação do projecto.
-- `.gitignore`: exclusões de ficheiros locais.
+- `assets/`: logótipo e fotografias.
+- `README.md`: documentação.
+- `.gitignore`: exclusões locais.
 
 ## Referências
 
 - https://institutonilia.edu.mz/
 - https://www.facebook.com/profile.php?id=100057280066749
 
-## Identidade visual
-
-O símbolo original é preservado, sem recoloração. A identidade do website combina laranja e terracota com superfícies suaves e texto de elevado contraste.
-
-| Cor | Código | Aplicação |
-| --- | --- | --- |
-| Laranja | `#F25625` | Símbolo e pequenos destaques |
-| Terracota | `#B64221` | Botões e títulos de destaque |
-| Marfim | `#FFFAF5` | Fundo principal |
-| Pêssego suave | `#F6E5D9` | Secção institucional |
-| Areia rosada | `#FAEADE` | Área de admissões |
-| Castanho escuro | `#342B28` | Texto principal |
-
-O branco é usado junto ao logótipo para preservar o fundo do ficheiro original. A tipografia usa Manrope (400–800), carregada através de Google Fonts, com Arial como alternativa. As proporções do símbolo são preservadas com `object-fit: contain`.
-
-## Composição e tipografia
-
-Revisão inspirada na organização de conteúdos educativos do UX Design Institute: hierarquia sem serifa, títulos de maior presença, fotografias rectangulares, separadores discretos e oferta de ensino apresentada em linhas. A referência não implica afiliação institucional.
-
-Os tamanhos e a composição ajustam-se a computador, tablet e telemóvel. O símbolo original e a paleta suave são preservados. A fonte externa depende da disponibilidade de Google Fonts; Arial serve de alternativa.
-
-## Template dinâmico
-
-Nova composição com títulos Manrope em peso 800, botões arredondados, cartões de ensino, secção institucional escura e superfícies suaves em pêssego. O cabeçalho adapta-se à deslocação e uma linha indica o progresso de leitura.
-
-As secções e os cartões entram no ecrã através de IntersectionObserver. O scroll controla pequenos deslocamentos das fotografias e dos cartões, com requestAnimationFrame e eventos passivos. Há também uma faixa tipográfica em movimento, elementos flutuantes e transições nos botões.
-
-A preferência `prefers-reduced-motion` desactiva animações e movimentos. Sem JavaScript, os conteúdos mantêm-se visíveis. A vista móvel foi verificada a 378 pixels.
