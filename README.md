@@ -14,7 +14,7 @@ Aceda a http://localhost:8080. Não exige instalação de dependências nem comp
 
 ## Publicar num servidor
 
-Copie `index.html` para a pasta pública do alojamento, como `public_html` ou `www`. O projecto usa HTML, CSS e JavaScript e pode ser servido por Apache, Nginx ou outro servidor de ficheiros estáticos.
+Copie `index.html` e a pasta `assets/` para a pasta pública do alojamento, como `public_html` ou `www`. O projecto usa HTML, CSS e JavaScript e pode ser servido por Apache, Nginx ou outro servidor de ficheiros estáticos.
 
 ## Funcionalidades
 
@@ -26,11 +26,12 @@ Copie `index.html` para a pasta pública do alojamento, como `public_html` ou `w
 
 ## Limites do protótipo
 
-Não inclui sistema de gestão académica, autenticação, pagamentos, base de dados nem submissão de matrículas. As fotografias e o logótipo são carregados do site institucional e dependem da sua disponibilidade. A utilização definitiva dos conteúdos e da identidade institucional deve ser acordada com a instituição. Antes da publicação institucional, validar os contactos, requisitos, propinas e conteúdos.
+Não inclui sistema de gestão académica, autenticação, pagamentos, base de dados nem submissão de matrículas. As fotografias são carregadas do site institucional e dependem da sua disponibilidade. O logótipo fornecido está incluído localmente em `assets/logotipo-nilia.jpg`. A utilização definitiva dos conteúdos e da identidade institucional deve ser acordada com a instituição. Antes da publicação institucional, validar os contactos, requisitos, propinas e conteúdos.
 
 ## Estrutura
 
 - `index.html`: página, estilos e interacções.
+- `assets/logotipo-nilia.jpg`: logótipo original fornecido.
 - `README.md`: documentação do projecto.
 - `.gitignore`: exclusões de ficheiros locais.
 
@@ -38,3 +39,18 @@ Não inclui sistema de gestão académica, autenticação, pagamentos, base de d
 
 - https://institutonilia.edu.mz/
 - https://www.facebook.com/profile.php?id=100057280066749
+
+## Identidade visual
+
+O símbolo original é preservado, sem recoloração. A identidade do website combina laranja e terracota com superfícies suaves e texto de elevado contraste.
+
+| Cor | Código | Aplicação |
+| --- | --- | --- |
+| Laranja | `#F25625` | Símbolo e pequenos destaques |
+| Terracota | `#B64221` | Botões e títulos de destaque |
+| Marfim | `#FFFAF5` | Fundo principal |
+| Pêssego suave | `#F6E5D9` | Secção institucional |
+| Areia rosada | `#FAEADE` | Área de admissões |
+| Castanho escuro | `#342B28` | Texto principal |
+
+O branco é usado junto ao logótipo para preservar o fundo do ficheiro original. Títulos em Georgia e texto em Arial dispensam fontes externas. As proporções do símbolo são preservadas com `object-fit: contain`.
