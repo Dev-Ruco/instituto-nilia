@@ -52,3 +52,9 @@ Não inclui gestão académica, autenticação, pagamentos, base de dados nem su
 - https://institutonilia.edu.mz/
 - https://www.facebook.com/profile.php?id=100057280066749
 
+
+## Abertura com galeria fotográfica
+
+A secção inicial usa fotografias reais do Instituto Nília como fundo panorâmico. O texto e os botões permanecem fixos sobre uma zona clara de leitura. As imagens alternam com transição suave a cada 6,5 segundos, com controlos de anterior, seguinte e pausa.
+
+A rotação pára fora da área visível, quando a página está em segundo plano e durante o foco nos controlos. A preferência de movimento reduzido inicia a apresentação em pausa. Em telemóveis, o fundo fotográfico é colocado abaixo do conteúdo principal para preservar o acesso imediato ao contacto.
