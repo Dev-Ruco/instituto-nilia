@@ -53,8 +53,12 @@ Não inclui gestão académica, autenticação, pagamentos, base de dados nem su
 - https://www.facebook.com/profile.php?id=100057280066749
 
 
-## Abertura com galeria fotográfica
+## Galeria de fotografias restauradas e navegação móvel
 
-A secção inicial usa fotografias reais do Instituto Nília como fundo panorâmico. O texto e os botões permanecem fixos sobre uma zona clara de leitura. As imagens alternam com transição suave a cada 6,5 segundos, com controlos de anterior, seguinte e pausa.
+A galeria automática apresenta sete versões restauradas das fotografias fornecidas: geologia, música, desporto, laboratório, sala de aula, simulação clínica e formação profissional. Os ficheiros estão em `assets/nilia-*.webp`, optimizados sem deformação. O enquadramento completo é mantido com `object-fit: contain`.
 
-A rotação pára fora da área visível, quando a página está em segundo plano e durante o foco nos controlos. A preferência de movimento reduzido inicia a apresentação em pausa. Em telemóveis, o fundo fotográfico é colocado abaixo do conteúdo principal para preservar o acesso imediato ao contacto.
+Os controlos são discretos e ficam abaixo das fotografias: anterior, seguinte, indicadores e pausa. Há navegação por deslize horizontal e teclas de seta. A apresentação alterna a cada 6,5 segundos e pausa quando a galeria fica fora do ecrã, a página perde visibilidade ou o foco entra nos controlos. A preferência de movimento reduzido inicia a galeria em pausa.
+
+No telemóvel, os textos e as acções aparecem antes da galeria. Uma barra fixa dá acesso a Ensino, Admissões e Ligar à escola; o espaço inferior da página acomoda essa barra. Os itens do menu têm áreas de toque amplas. A ordem do documento acompanha a apresentação móvel.
+
+Verificadas as vistas de 320 e 378 píxeis sem deslocamento horizontal, a abertura e o fecho do menu e os controlos da galeria. A publicação mantém a audiência anterior do protótipo.
