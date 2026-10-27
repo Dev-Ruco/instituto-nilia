@@ -60,3 +60,11 @@ O branco é usado junto ao logótipo para preservar o fundo do ficheiro original
 Revisão inspirada na organização de conteúdos educativos do UX Design Institute: hierarquia sem serifa, títulos de maior presença, fotografias rectangulares, separadores discretos e oferta de ensino apresentada em linhas. A referência não implica afiliação institucional.
 
 Os tamanhos e a composição ajustam-se a computador, tablet e telemóvel. O símbolo original e a paleta suave são preservados. A fonte externa depende da disponibilidade de Google Fonts; Arial serve de alternativa.
+
+## Template dinâmico
+
+Nova composição com títulos Manrope em peso 800, botões arredondados, cartões de ensino, secção institucional escura e superfícies suaves em pêssego. O cabeçalho adapta-se à deslocação e uma linha indica o progresso de leitura.
+
+As secções e os cartões entram no ecrã através de IntersectionObserver. O scroll controla pequenos deslocamentos das fotografias e dos cartões, com requestAnimationFrame e eventos passivos. Há também uma faixa tipográfica em movimento, elementos flutuantes e transições nos botões.
+
+A preferência `prefers-reduced-motion` desactiva animações e movimentos. Sem JavaScript, os conteúdos mantêm-se visíveis. A vista móvel foi verificada a 378 pixels.
